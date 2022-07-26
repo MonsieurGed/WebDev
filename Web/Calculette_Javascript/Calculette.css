@@ -1,0 +1,52 @@
+.app {
+  display: grid;
+  border: 4px solid;
+  border-radius: 10px;
+  border-color: teal;
+  margin: auto;
+  width: 500px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50px repeat(5, 30px);
+  grid-template-areas:
+    "t t t t"
+    "1 2 3 4"
+    "5 6 7 8"
+    "9 0 c c"
+    "plus moins c c"
+    "mult divi eq eq";
+}
+
+h3 {
+  text-align: right;
+  grid-area: t;
+}
+
+.btn {
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  border: white solid;
+
+  /* text-align: center;
+  width: 10px;
+  height: 50px; */
+}
+.btn:hover {
+  background-color: turquoise;
+  transition: 0.4s;
+}
+
+#C {
+  grid-area: c;
+  background-color: teal;
+  border-radius: 5px;
+  border: solid white;
+  color: white;
+}
+#eq {
+  grid-area: eq;
+  background-color: teal;
+  border-radius: 5px;
+  border: solid white;
+  color: white;
+}

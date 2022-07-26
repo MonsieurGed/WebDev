@@ -1,0 +1,53 @@
+*{
+  overflow:hidden;
+}
+.rond {
+  height: var(--a);
+  width: var(--b);
+  border-radius: 50%;
+  background-color: rgb(115, 255, 0);
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  animation: anim 5s;
+  filter: hue-rotate(0deg);
+  opacity: 0;
+}
+.compteur {
+   height: 150px;
+   width: 200px;
+   position: absolute;
+   left: 40%;
+   top: 20%;
+ }
+
+.rond2 {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(0, 183, 255);
+  bottom: 5%;
+  /* right: auto; */
+  filter: hue-rotate(0deg);
+  animation: anim 5s forwards;
+  opacity: 0;
+}
+#pp {
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+#lg {
+  text-align: center;
+}
+@keyframes anim {
+  to {
+    bottom: 90%;
+    filter: hue-rotate(700deg);
+    opacity: 1;
+    left: var(--c);
+  }
+
+ 
+
